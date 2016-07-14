@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Welcome to Jer" />
+  <meta name="keywords" content="Experience," />
 
 
 
@@ -84,12 +84,16 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jer_Xia">
-<meta property="og:url" content="http://jer-x.top/index.html">
+<meta name="description" content="摘要: This post show me how to build my blog">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use hexo&github to build your own blog">
+<meta property="og:url" content="http://jer-x.top/2016/07/14/Use hexo&github to build your own blog/index.html">
 <meta property="og:site_name" content="Jer_Xia">
+<meta property="og:description" content="摘要: This post show me how to build my blog">
+<meta property="og:updated_time" content="2016-06-28T07:33:16.205Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jer_Xia">
+<meta name="twitter:title" content="Use hexo&github to build your own blog">
+<meta name="twitter:description" content="摘要: This post show me how to build my blog">
 
 
 
@@ -110,9 +114,9 @@
 
 
 
-  <link rel="canonical" href="http://jer-x.top/"/>
+  <link rel="canonical" href="http://jer-x.top/2016/07/14/Use hexo&github to build your own blog/"/>
 
-  <title> Jer_Xia </title>
+  <title> Use hexo&github to build your own blog | Jer_Xia </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -133,9 +137,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -222,9 +224,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -244,10 +246,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/07/14/Use hexo&github to build your own blog/" itemprop="url">
-                  Use hexo&github to build your own blog
-                </a>
+                Use hexo&github to build your own blog
               
             
           </h1>
@@ -306,157 +305,79 @@
       
 
       
-        
-          <p>摘要: This post show me how to build my blog<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/07/14/Use hexo&github to build your own blog/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+        <p>摘要: This post show me how to build my blog<br><a id="more"></a></p>
+<ol>
+<li>申请github账号</li>
+<li>在github上新建一个repository,名字必须为 &gt;账号名.github.io;</li>
+<li>先到node.js官网上下载一个node.js并安装</li>
+<li>在现在git的命令行软件</li>
+<li>在某个地方新建一个文件夹</li>
+<li>打开git命令行,用npm命令安装hexo,命令为 npm i -g hexo</li>
+<li>用 hexo -v 来检查是否安装成功</li>
+<li>成功后则在此文件夹中打开git命令行,输入 hexo init</li>
+<li>使用npm install安装默认插件</li>
+<li>再使用npm install hexo-deployer-git –save来安装github插件</li>
+<li>使用hexo generate命令生成web项目,使用hexo deploy命令发布你的web项目</li>
+<li><p>找到目录下的_config.yml文件并修改一下代码,把Jer-X改为你自己的账户名</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy: </div><div class="line">    type: git</div><div class="line">    repo: https:<span class="comment">//github.com/Jer-X/Jer-X.github.io.git</span></div><div class="line">    branch: master</div></pre></td></tr></table></figure>
+</li>
+<li><p>然后你就可以使用hexo deploy命令来发布你自己的博客</p>
+</li>
+<li>最后记得访问一下xxx.github.io去查看自己的博客</li>
+</ol>
+
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/14/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-14T15:40:52+08:00" content="2016-07-14">
-              2016-07-14
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/随写/" itemprop="url" rel="index">
-                    <span itemprop="name">随写</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
+            <a href="/tags/Experience/" rel="tag">#Experience</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <p>Welcome to <a href="https://jer-x.github.io/">Jer</a>! This is my first post.</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/07/14/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/14/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
           </div>
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -464,6 +385,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -483,8 +408,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://avatars2.githubusercontent.com/u/19970845?v=3&s=460"
@@ -534,6 +468,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -630,6 +575,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
